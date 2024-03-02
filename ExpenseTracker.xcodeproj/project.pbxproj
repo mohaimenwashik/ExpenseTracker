@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691BDCE12B9320E000227649 /* ActivitySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691BDCE02B9320E000227649 /* ActivitySummaryView.swift */; };
 		6926893F2B91793100DABF92 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926893E2B91793100DABF92 /* ExpenseTrackerApp.swift */; };
 		692689412B91793100DABF92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692689402B91793100DABF92 /* ContentView.swift */; };
 		692689432B91793200DABF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692689422B91793200DABF92 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		692689502B91793200DABF92 /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926894F2B91793200DABF92 /* ExpenseTrackerTests.swift */; };
 		6926895A2B91793200DABF92 /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692689592B91793200DABF92 /* ExpenseTrackerUITests.swift */; };
 		6926895C2B91793200DABF92 /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926895B2B91793200DABF92 /* ExpenseTrackerUITestsLaunchTests.swift */; };
+		6926896B2B9179CE00DABF92 /* ExpenseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926896A2B9179CE00DABF92 /* ExpenseRecord.swift */; };
+		6926896D2B9179E400DABF92 /* ExpenseDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926896C2B9179E400DABF92 /* ExpenseDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691BDCE02B9320E000227649 /* ActivitySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySummaryView.swift; sourceTree = "<group>"; };
 		6926893B2B91793100DABF92 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6926893E2B91793100DABF92 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		692689402B91793100DABF92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		692689552B91793200DABF92 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		692689592B91793200DABF92 /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		6926895B2B91793200DABF92 /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6926896A2B9179CE00DABF92 /* ExpenseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRecord.swift; sourceTree = "<group>"; };
+		6926896C2B9179E400DABF92 /* ExpenseDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				6926893E2B91793100DABF92 /* ExpenseTrackerApp.swift */,
 				692689402B91793100DABF92 /* ContentView.swift */,
+				691BDCE02B9320E000227649 /* ActivitySummaryView.swift */,
+				6926896C2B9179E400DABF92 /* ExpenseDictionary.swift */,
+				6926896A2B9179CE00DABF92 /* ExpenseRecord.swift */,
 				692689422B91793200DABF92 /* Assets.xcassets */,
 				692689442B91793200DABF92 /* Preview Content */,
 			);
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6926896D2B9179E400DABF92 /* ExpenseDictionary.swift in Sources */,
 				692689412B91793100DABF92 /* ContentView.swift in Sources */,
+				691BDCE12B9320E000227649 /* ActivitySummaryView.swift in Sources */,
+				6926896B2B9179CE00DABF92 /* ExpenseRecord.swift in Sources */,
 				6926893F2B91793100DABF92 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

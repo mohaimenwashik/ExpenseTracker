@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ActivitySummaryView: View {
+    @ObservedObject var expenseInfoDictionary: ExpenseDictionary
+    
+    let numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            let sevenDaysAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
+            let entriesForWeek = expenseInfoDictionary.infoRepository.filter { $0.date >= sevenDaysAgo }
+            
+            List {
+                ForEach(entriesForWeek, id: \.self) { record in
+                    let formattedAmount = numberFormatter.string(from: NSNumber(value: record.amount ?? 0.0)) ?? "0.00"
+                    Text("\(record.description ?? "") - \(formattedAmount) on \(record.formattedDate())")
+                }
+            }
+            .navigationBarTitle("Weekly Summary")
+        }
     }
 }
 
-#Preview {
-    ActivitySummaryView()
-}
+
